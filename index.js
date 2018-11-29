@@ -51,6 +51,7 @@ function move(dom) {
                     dom.css('top', '0px');
                     alert('游戏结束,最高得分:' + num);
                     clearInterval(timer);
+                    flag = false;
                 }
             }
             $(dom.children()[dom.children().length - 1]).remove();
