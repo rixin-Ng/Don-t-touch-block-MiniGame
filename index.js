@@ -13,7 +13,6 @@ var num = 0;
 var colors = ['red', 'blue', 'yellow', 'green'];
 var flag = true;
 
-
 function createDiv() {
     var oDiv = $('<div></div>');
     var index = Math.floor(Math.random() * 4);
@@ -54,7 +53,7 @@ function move(dom) {
                     flag = false;
                 }
             }
-            $(dom.children()[dom.children().length - 1]).remove();
+            $(dom.children()[len - 1]).remove();
         }
     }, 20);
     bindEvent();
@@ -82,14 +81,14 @@ function bindEvent() {
 
 }
 function clickStart() {
-    topArea.on('click', function () {
+    $('a').on('click', function () {
         if (main.children().length) {
             //暴力清楚main里面所有盒子
             main.html('');
         }
         //清空计分
         //隐藏开始盒子
-        topArea.css('display', 'none');
+        $('a').css('display', 'none');
         //调用定时器
         move(main);
     })
