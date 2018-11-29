@@ -19,6 +19,7 @@
     z-index:99; 
 }
 .top .startGame{
+    display: block;
     text-align:center;
     height:120px;
     line-height: 120px;
@@ -47,4 +48,7 @@
     border-bottom:1px solid #222;    
     float: left;
     cursor:pointer;     
+}
+.main > div div:first-child{
+    border-left:none;
 }
