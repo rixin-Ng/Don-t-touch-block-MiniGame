@@ -50,5 +50,5 @@
     cursor:pointer;     
 }
 .main > div div:first-child{
-    border-left:none;
+    border-left:1px solid transparent;
 }
