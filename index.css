@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    margin:50px auto;
+    width:320px;
+    height:480px;
+    border:1px solid #222;
+    position:relative;
+    overflow:hidden;
+}
+
+.top{
+    width:100%;
+    position:absolute;
+    top:0;
+    text-align:center;
+    z-index:99; 
+}
+.top .startGame{
+    text-align:center;
+    height:120px;
+    line-height: 120px;
+    width:320px;
+    color:cornflowerblue;
+    background-color:#fff;
+    text-decoration: none;
+    border-bottom:3px dashed #eee;
+    font-size:36px;
+    font-weight:300;    
+} 
+.main{
+    width:320px;
+    height:480px;
+    position:relative;
+    top:-150px;
+}
+.row{
+    width:320px;
+    height:120px;
+}
+.row div{
+    width:79px;
+    height:119px;
+    border-left:1px solid #222;
+    border-bottom:1px solid #222;    
+    float: left;
+    cursor:pointer;     
+}
